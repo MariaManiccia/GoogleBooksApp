@@ -13,12 +13,26 @@ const { Schema } = mongoose;
 // link - The Book's information link as returned from the Google Books API
 const BookSchema = new Schema({
   body: {
-    type: String,
-  },
-  article: {
-    type: Schema.Types.ObjectId,
-    ref: 'Book',
-  },
+    title: {
+        type: String,
+        required: true,
+      },
+      authors: {
+        type: String,
+        required: true,
+      },
+      description: {
+        type: String,
+        required: true,
+      },
+      image: {
+        type: String,
+        required: true,
+      },
+      link: {
+        type: String,
+        required: true,
+      },
 });
 
 // Create the model
