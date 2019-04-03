@@ -17,7 +17,7 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
           id="Title"
           type="text"
           value={q}
-          placeholder="The Art of Racing in the Rain"
+          placeholder="The Little Prince"
           name="q"
           onChange={handleInputChange}
           required
