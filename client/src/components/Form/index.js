@@ -4,6 +4,7 @@
 /* eslint-disable jsx-a11y/label-has-for */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
+import './style.css';
 
 function Form({ q, handleInputChange, handleFormSubmit }) {
   return (
@@ -27,7 +28,7 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
         <button
           onClick={handleFormSubmit}
           type="submit"
-          className="btn btn-lg btn-success float-right"
+          className="btn btn-lg btn-info float-right"
         >
           Search
         </button>
